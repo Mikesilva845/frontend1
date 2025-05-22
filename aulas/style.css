@@ -231,5 +231,28 @@ h2 {
         line-height: 150%;   /* Altura da linha ou espaçamento entre linhas */
         margin-bottom: 15px;  /* Margem inferior */
     }
+    ul,ol{
+        padding-left: 20px;
+        list-style:disc ;
+        li{
+            line-height: 170%;
+        }
+    
+    }
+
+}
+
+.grid-especialidades{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    *{
+        flex-basis: 300px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    
 
 }
