@@ -9,6 +9,7 @@
 
 body{
     font-family:'Poppins', sans-serif;
+    transform: translateX(0px);
 }
 
 
@@ -19,14 +20,29 @@ main{
 }
 
 header{
-    h1{
-        margin-left: 200px;
+    display: flex;
+
+    
+    h2{
+        margin-top: 0px;
+        margin-left: 140px;
+
     }
 
-
-    img{
+    img{   
+        position: relative;bottom: 65px;
         width: 120px;
-        margin-bottom: 2px;
+        
     }
  
+}
+
+.destaque{
+    display: flex;
+    justify-content:center;
+    width: 10 ;
+    gap: 50px;
+    background-color: #2179a0;
+    width: px;
+    padding: 15px;
 }
