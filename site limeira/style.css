@@ -9,40 +9,43 @@
 
 body{
     font-family:'Poppins', sans-serif;
-    transform: translateX(0px);
+    transform: translateY(0px);
 }
 
 
 main{
     width: 1200px;
-    margin: 0 auto 0 auto;
-    
+    margin: 0 auto 0 auto; 
 }
 
 header{
     display: flex;
 
-    
     h2{
-        margin-top: 0px;
-        margin-left: 140px;
-
+        line-height: 0.8;
+        position: relative;top: 50px;
+        margin-left: 120px;
     }
-
-    img{   
-        position: relative;bottom: 65px;
+    img{
+        position: relative;bottom: 30px;
         width: 120px;
-        
     }
- 
 }
 
 .destaque{
-    display: flex;
-    justify-content:center;
-    width: 10 ;
-    gap: 50px;
     background-color: #2179a0;
-    width: px;
-    padding: 15px;
+    position: relative;bottom: 39px;
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+    gap: 50px;
+
+    a{
+        background-color: #aaa  ;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;    
+        
+    }
 }
