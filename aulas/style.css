@@ -360,3 +360,43 @@ th{
 .tabela3 th:nth-child(3){
     font-weight: 700;
 }
+
+/* Formatação da galeria de imagens */
+
+.galeria-destaque{
+    display: flex;                   /* necessarío pois img e tag inline */
+    justify-content: center;         /* Centralizar a imagem */
+    background-color: #333;
+    margin: 30px 0px 10px;           /* top right bottom left */
+    img{
+        width: 60%;
+    }
+}
+
+.galeria-miniaturas{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 110px;
+    }
+
+}
+
+.video{
+    text-align: center;
+    video{
+        width: 70%;
+    }
+
+    iframe{
+        width: 70%;
+        height: 60vh ;
+    }
+}
+
+.servicos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
