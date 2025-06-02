@@ -39,13 +39,72 @@ header{
     justify-content: center;
     padding: 13px;
     gap: 50px;
-
+    
     a{
-        background-color: #aaa  ;
+        background-color: #fff  ;
         padding: 5px;
         border-radius: 5px;
-        color: white;
+        color:#2179a0;
         text-decoration: none;    
         
     }
+}
+
+.grid-home-1{
+    display: flex;
+    justify-content: start;
+    gap: 1.5rem;
+    margin-top: 25px;
+
+    h2{
+        text-align: center;
+    }
+}
+
+.grid-home-2{
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+    margin-top: 25px;
+
+    h2{
+        text-align: center;
+    }
+}
+
+.redes-sociais{
+    margin-left: 70%;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.icons{
+    
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin-top: 10px;
+    gap: 25px;
+  
+    a{
+        color: white;
+        text-align: center;
+        border-radius: 75%;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+a:hover{
+    transform: translateY(-2px);
+}
+
+.icons a:nth-child(1){
+    background-color: #fd1d1d;
+}
+.icons a:nth-child(2){
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d )
+}
+.icons a:nth-child(3){
+    background-color:#3b5998 
 }
