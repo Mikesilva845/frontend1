@@ -252,7 +252,151 @@ h2 {
         flex-grow: 1;
         flex-shrink: 1;
     }
+}
 
-    
 
+/* Formatação das tabelas */
+table{
+    width: 100%;
+    border-collapse: collapse;              /* Junta as bordas em uma só */
+}
+th{
+    text-align: start;      /* alinhamento a esquerda */
+}
+.tabela1 th{
+    background-color: #aaa;
+    border: 2px solid #aaa;
+    padding: 7px;
+}
+.tabela1 td{
+    border: 2px solid #ccc;
+    padding: 7px;
+}
+
+.tabela1 th:nth-child(3),       
+.tabela1 td:nth-child(3){          /* pseudo seletor */
+
+    text-align: end;
+    font-weight: 500;
+}
+.tabela1 th:nth-child(4),       
+.tabela1 td:nth-child(4){          /* pseudo seletor */
+    text-align: center;
+}
+.tabela1 tr:nth-child(){      /* even = par. odd = ímpar */
+    color:green;
+}
+
+.tabela1 th:nth-child(3){
+    font-weight: 700;
+}
+
+
+
+.tabela2 th{
+    border-bottom: 2px solid #aaa ;
+    padding: 7px;
+    text-align: center;
+}
+
+.tabela2 td{
+    border-bottom : 2px solid #ccc;
+    padding: 7px;
+}
+
+.tabela2 th:nth-child(3),       
+.tabela2 td:nth-child(3){          /* pseudo seletor */
+
+    text-align: end;
+    font-weight: 500;
+}
+.tabela2 th:nth-child(4),       
+.tabela2 td:nth-child(4){          /* pseudo seletor */
+    text-align: center;
+}
+
+.tabela2 th:nth-child(1),
+.tabela2 th:nth-child(2)    {
+    text-align: start;
+}
+
+.tabela2 th:nth-child(3){
+    font-weight: 700;
+}
+
+
+
+
+.tabela3 th{
+    background-color: #aaa;
+    padding: 7px;
+    text-align: center;
+}
+
+.tabela3 td{
+    padding: 7px;
+}
+
+.tabela3 th:nth-child(3),       
+.tabela3 td:nth-child(3){          /* pseudo seletor */
+
+    text-align: end;
+    font-weight: 500;
+}
+.tabela3 th:nth-child(4),       
+.tabela3 td:nth-child(4){          /* pseudo seletor */
+    text-align: center;
+}
+
+.tabela3 th:nth-child(1),
+.tabela3 th:nth-child(2)    {
+    text-align: start;
+}
+
+.tabela3 tr:nth-child(even){
+    background-color: #ccc;
+}
+
+.tabela3 th:nth-child(3){
+    font-weight: 700;
+}
+
+/* Formatação da galeria de imagens */
+
+.galeria-destaque{
+    display: flex;                   /* necessarío pois img e tag inline */
+    justify-content: center;         /* Centralizar a imagem */
+    background-color: #333;
+    margin: 30px 0px 10px;           /* top right bottom left */
+    img{
+        width: 60%;
+    }
+}
+
+.galeria-miniaturas{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 110px;
+    }
+
+}
+
+.video{
+    text-align: center;
+    video{
+        width: 70%;
+    }
+
+    iframe{
+        width: 70%;
+        height: 60vh ;
+    }
+}
+
+.servicos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
