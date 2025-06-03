@@ -400,3 +400,12 @@ th{
     flex-wrap: wrap;
     gap: 10px;
 }
+
+.convenio{
+    text-align: center;
+
+    i{
+        font-size: 70px; 
+    }  
+}
+
