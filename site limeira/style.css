@@ -209,3 +209,17 @@ table{
 .tabela2 td:nth-child(4){
     text-align: end;
 }
+
+.titulo{
+    text-align: center;
+}
+
+.texto{
+    text-align: start;
+    margin-top: 50px;
+
+    li{
+        margin-top: 8px;
+        margin-left: 18px;
+    }
+}
