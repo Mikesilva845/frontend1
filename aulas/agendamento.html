@@ -22,11 +22,44 @@
             <p>Opção online para agendamento de consultas</p>
         </section>
 
-        <section class="servicos">
-    
+        <section class="agendamento">
+
+            <form action="" method="post" name="form-agendamento" id="form-agendamento">
+                <div class="form-group">
+                    <div>
+                        <label for="">Selecione a data</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <div>
+                        <label for="">selecione a hora</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
+                    <div>
+                        <label for="">selecione a especialidades</label>
+                        <select name="especialidades" id="especialidades">
+                            <option></option>
+                            <option>Cardiologia</option>
+                            <option>Dermatologia</option>
+                            <option>Pediatria</option>
+                            <option>Ortopedia</option>
+                            <option>Clinica geral</option>
+                            <option>Endocrinologia</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <input type="submit" value="Confirmar Agendamento" name="Confirmar" id="Confirmar">
+                </div>
+
+            </form>
+
         </section>
 
-        <section class="voltar" > 
+        <section class="voltar">
             <a href="index.html"> <i class="bi bi-arrow-left-circle-fill"></i>voltar
         </section>
 

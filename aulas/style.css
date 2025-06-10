@@ -155,6 +155,7 @@ h2 {
 .redes-social {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 10px;
 
@@ -401,9 +402,27 @@ th{
     gap: 10px;
 }
 
-.convenio{
-    text-align: center;
-
+.grid-convenio{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    * {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 15%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    h3{
+        font-size: 1.2rem;
+        margin-top: 10px;
+        font-weight: normal;
+    }
+    i{
+        font-size: 4rem;
+        margin-top: 20px;
+    }
     i{
         font-size: 70px; 
     }  
@@ -453,16 +472,113 @@ th{
     }
 
     input[type=submit]{
-        border-style: none;      /* Retirar a borda */
+        border-style: none;                        /* Retirar a borda */
         background-color: #3b5998;
         color: #fff;
         padding: 10px 30px;
         border-radius: 5px;
-        cursor: pointer;          /* mudar o cursor para mãozinha */
+        cursor: pointer;                          /* mudar o cursor para mãozinha */
     }
 
-    input[type=submit]:hover{    /* quando passar o mouse no botão */
+    input[type=submit]:hover{                     /* quando passar o mouse no botão */
         background-color: #000;
     }
 }
 
+/* Formatação do .agendamento */
+.agendamento{
+    margin: 0px auto;                            /* centralizar o container */
+    width: 50%;           
+    text-align: center;                          /* centralizar o conteudo */
+    label{
+        display: block;                         /* transformar em bloco ficar separado do campo */
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: .9rem;
+        color: #555;
+    }
+    .form-group{
+        display: flex;                         /* disposição lado a lado */
+        justify-content: space-between;        /*  distribuição do conteudo */
+    }
+    input[type=date],
+    input[type=time],
+    input[type=text],
+    select{
+        padding: 8px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+    }
+    input[type=time]{
+        padding: 7px;
+    }
+    input[type=text]{
+        width: 80%;
+    }
+
+    input[type=submit]{
+        border-style: none;                        /* Retirar a borda */
+        background-color: #3b5998;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;                          /* mudar o cursor para mãozinha */
+    }
+
+    input[type=submit]:hover{                     /* quando passar o mouse no botão */
+        background-color: #000;
+    }
+    div{
+        margin-top: 30px;
+    }
+
+}
+
+/* Formatação para layout responsivo */
+
+@media screen and (max-width: 800px){                 /* media queries */
+    /* header {
+        background-color: green;
+    } */
+
+    main{
+        width: 100%;
+    }
+    .grid-home{
+        * {  
+            flex-basis: 100%;
+        }
+    }
+    .grid-clínica,
+    .grid-convenios,
+    .form-group{
+        flex-direction: column;                         /* mudar a direção do empilhamento das tags */
+        align-items: center;
+    }
+    .video{
+        iframe{
+            width: 100%;
+            height: 35vh;
+        }
+        video{
+            width: 100%;
+        }
+    }
+    .agendamento{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /* header {
+        background-color: red;
+    } */
+    
+}
+
+@media screen and (max-width: 400px){
+    /* header{
+        background-color: yellow
+    } */
+}
