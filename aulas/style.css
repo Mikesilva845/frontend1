@@ -537,10 +537,7 @@ th{
 
 /* Formatação para layout responsivo */
 
-@media screen and (max-width: 800px){                 /* media queries */
-    /* header {
-        background-color: green;
-    } */
+@media screen and (max-width: 800px){                 
 
     main{
         width: 100%;
