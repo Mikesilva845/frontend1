@@ -407,18 +407,6 @@ table {
 
     }
 
-    .esporte{
-        iframe{
-            width: 100%;
-            height: 35vh;
-        }
-        .volei,
-        .futebol,
-        .basquete{
-            width: 100%;
-        }
-    }
-
     .destaque {
         flex-wrap: wrap;
         text-align: center;
